@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Banger Co | Rent car</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="LERAMIZ Landing Page Template">
+	<meta name="keywords" content="LERAMIZ, unica, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->   
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/animate.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/magnific-popup.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+
+
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript">
+		function rent()
+		{
+			var nr=document.getElementById("txt1").value;
+			var time=document.getElementById("combo").value;
+
+			if(nr=="" || time=="")
+			{
+				alert("Please fill out the form");
+			}
+			else
+			{
+				alert("Your request has been sent!");
+			}
+		}
+	</script>
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+	
+	<!-- Header section -->
+	<header class="header-section">
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 header-top-left">
+						<div class="top-info">
+							<i class="fa fa-phone"></i>
+							(+355)6661214321
+						</div>
+						<div class="top-info">
+							<i class="fa fa-envelope"></i>
+							info@bangerCo.com
+						</div>
+					</div>
+					<div class="col-lg-6 text-lg-right header-top-right">
+						<div class="top-social">
+							<a href=""><i class="fa fa-facebook"></i></a>
+							<a href=""><i class="fa fa-instagram"></i></a>
+							<a href=""><i class="fa fa-linkedin"></i></a>
+						</div>
+						<div class="user-panel">
+							<a href="register.html"><i class="fa fa-user-circle-o"></i> Register</a>
+							<a href="login_index.html"><i class="fa fa-sign-in"></i> Login</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="site-navbar">
+						<a href="#" class="site-logo"><h2 style="color: white">Banger Company</h2></a>
+						<div class="nav-switch">
+							<i class="fa fa-bars"></i>
+						</div>
+						<ul class="main-menu" style="font-weight: bold">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="car_listing.html">Car Listing</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header section end -->
+
+
+	<!-- Page top section -->
+	<section class="page-top-section set-bg" data-setbg="img/bg.jpg">
+		<div class="container text-white">
+		</div>
+	</section>
+	<!--  Page top end -->
+
+	<!-- Page -->
+	<section class="page-section" style="margin-top: 5%">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-lg-8 single-list-page">
+					<div class="single-list-slider owl-carousel" id="sl-slider">
+						<div class="sl-item set-bg" data-setbg="img/car_img/car3.jpg">
+							<div class="sale-notic">FOR RENT</div>
+						</div>
+					</div>
+					
+					<div class="single-list-content">
+						<div class="row">
+							<div class="col-xl-8 sl-title">
+								<h2>small family hatchback</h2>
+								<p><i class="fa fa-map-marker"></i>Beverly Hills, CA 90210</p>
+							</div>
+							<div class="col-xl-4">
+								<a href="#" class="price-btn">55.00 € / day</a>
+							</div>
+						</div>
+						<h3 class="sl-sp-title">Car Details</h3>
+						<div class="row property-details-list">
+							<div class="col-md-4 col-sm-6">
+								<p><i class="fas fa-gas-pump"></i> diesel</p>
+							</div>
+							<div class="col-md-4 col-sm-6">
+								<p><i class="fa fa-contao"></i> automatic</p>
+							</div>
+						</div>
+						
+						<div class="description contact-form">
+							
+							<div class="col-md-6">
+			
+			                    <input type="number" name="nrDay" placeholder="Nr of days" required="required" min="2" max="24" id="txt1">
+								<select name="typeRentDays" id="combo">
+									<option value="">Select</option>
+									<option value="howr">Howr</option>
+									<option value="day">Day</option>
+									<option value="week">Week</option>
+								</select>
+							</div>
+
+							<div class="col-md-12">
+					          <input type="submit" class="site-btn" value="RENT NOW" style="width: 50%" onclick="rent()"></button>
+							</div>
+							
+						</div>
+						
+					
+					</div>
+				</div>
+
+				<!-- sidebar -->
+			
+			</div>
+		</div>
+	</section>
+	<!-- Page end -->
+
+	<!-- Footer section -->
+	<footer class="footer-section set-bg" data-setbg="img/footer-bg.jpg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6 footer-widget">
+					<h2 style="color: white">Banger Co</h2>
+					<div class="social">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-instagram"></i></a>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-6 footer-widget">
+					<div class="contact-widget">
+						<h5 class="fw-title">CONTACT US</h5>
+						<p><i class="fa fa-map-marker"></i>Germany</p>
+						<p><i class="fa fa-phone"></i>(+355)6661214321</p>
+						<p><i class="fa fa-envelope"></i>info@bangerCo.com</p>
+						<p><i class="fa fa-clock-o"></i>Mon - Sat, 08 AM - 06 PM</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6  footer-widget">
+					<div class="newslatter-widget">
+						<h5 class="fw-title">NEWSLETTER</h5>
+						<p>Subscribe your email to get the latest news and new offer also discount</p>
+						<form class="footer-newslatter-form">
+							<input type="text" placeholder="Email address">
+							<button><i class="fa fa-send"></i></button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="footer-nav">
+					<ul>
+						<li><a href="">Home</a></li>
+						<li><a href="">Car Listing</a></li>
+						<li><a href="">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer section end -->
+
+                                        
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/magnific-popup.min.js"></script>
+	<script src="js/main.js"></script>
+
+
+	<!-- load for map -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0YyDTa0qqOjIerob2VTIwo_XVMhrruxo"></script>
+	<script src="js/map-2.js"></script>
+
+</body>
+</html>

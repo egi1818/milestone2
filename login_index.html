@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Banger Co Login</title>
+		<link href="css/login_style.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript">
+			function login()
+			{
+				var username=document.getElementById("username").value;
+				var password=document.getElementById("pass").value;
+
+				//alert(user+" "+pass);
+				
+				if(username.length==0 || password.length==0)
+				{
+					alert("Please fill out the form");
+				}
+				else if(username ==="user" && password === "user1234")
+				{
+					window.location=" car_listing.html";
+				}
+				else
+				{
+					alert("Username or Password is invalid");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="main">
+			<h1>Banger Co Login</h1>
+			<div id="login">
+				<h2>Login</h2>
+				<label>UserName :</label>
+				<input placeholder="username" type="text" id="username">
+				<label>Password :</label>
+				<input placeholder="**********" type="password" id="pass">
+				<button type="submit" onclick="login()">Login</button>
+				
+			</div>
+		</div>
+
+	</body>
+</html>
